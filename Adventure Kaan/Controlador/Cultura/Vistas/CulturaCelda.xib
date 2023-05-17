@@ -18,10 +18,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVh-rs-lQh">
-                        <rect key="frame" x="3" y="3" width="360" height="120"/>
+                        <rect key="frame" x="3" y="3" width="314" height="120"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondoCeldaZona" translatesAutoresizingMaskIntoConstraints="NO" id="MX9-2i-i9u">
-                                <rect key="frame" x="3" y="3" width="354" height="114"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_card" translatesAutoresizingMaskIntoConstraints="NO" id="MX9-2i-i9u">
+                                <rect key="frame" x="3" y="3" width="308" height="114"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="10"/>
@@ -29,7 +29,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tj9-IU-9G6">
-                                <rect key="frame" x="15" y="15" width="330" height="90"/>
+                                <rect key="frame" x="15" y="15" width="284" height="90"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="religion" translatesAutoresizingMaskIntoConstraints="NO" id="inK-oG-sl9">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
@@ -43,9 +43,9 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arte" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDD-3N-pRl">
-                                        <rect key="frame" x="110" y="0.0" width="220" height="90"/>
-                                        <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arte" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDD-3N-pRl">
+                                        <rect key="frame" x="110" y="0.0" width="174" height="90"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -68,10 +68,10 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="xVh-rs-lQh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="6W7-2G-bUB"/>
-                    <constraint firstAttribute="bottom" secondItem="xVh-rs-lQh" secondAttribute="bottom" constant="3" id="E5Q-qP-74v"/>
-                    <constraint firstItem="xVh-rs-lQh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="NS4-F5-aG3"/>
-                    <constraint firstAttribute="trailing" secondItem="xVh-rs-lQh" secondAttribute="trailing" constant="-43" id="fvg-aQ-Dat"/>
+                    <constraint firstAttribute="trailing" secondItem="xVh-rs-lQh" secondAttribute="trailing" constant="3" id="8tG-wp-4jR"/>
+                    <constraint firstAttribute="bottom" secondItem="xVh-rs-lQh" secondAttribute="bottom" constant="3" id="9dC-Z6-K2Y"/>
+                    <constraint firstItem="xVh-rs-lQh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="EBs-17-iqO"/>
+                    <constraint firstItem="xVh-rs-lQh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="oEh-IE-OZf"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -83,7 +83,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="fondoCeldaZona" width="2000" height="1333"/>
+        <image name="bg_card" width="1920" height="1080"/>
         <image name="religion" width="843" height="571"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
