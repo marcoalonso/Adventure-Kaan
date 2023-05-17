@@ -54,20 +54,9 @@ class ZonasViewController: UIViewController {
         self.present(vc, animated: true)
     }
     
-    ///Maps
+  // MARK:  Maps
     
     @IBAction func goMaps(_ sender: UIButton) {
-//        if let url = URL(string: "comgooglemaps://") {
-//            if UIApplication.shared.canOpenURL(url) {
-//                // Google Maps está instalado, abre la app
-//                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-//            } else {
-//                // Google Maps no está instalado, abre la versión web en Safari
-//                if let webURL = URL(string: "https://maps.google.com") {
-//                    UIApplication.shared.open(webURL, options: [:], completionHandler: nil)
-//                }
-//            }
-//        }
 
         func openGoogleMapsWithCoordinates(latitude: Double, longitude: Double) {
             if let url = URL(string: "comgooglemaps://?center=\(latitude),\(longitude)&zoom=14&views=traffic") {
