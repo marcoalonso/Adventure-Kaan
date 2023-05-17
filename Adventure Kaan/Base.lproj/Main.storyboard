@@ -57,7 +57,7 @@
                                         <rect key="frame" x="0.0" y="205" width="373" height="542"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="xk0-39-a7Y" imageView="qlt-VJ-xz7" rowHeight="88" style="IBUITableViewCellStyleDefault" id="G9q-zz-kI5">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celda" textLabel="xk0-39-a7Y" imageView="qlt-VJ-xz7" rowHeight="88" style="IBUITableViewCellStyleDefault" id="G9q-zz-kI5">
                                                 <rect key="frame" x="0.0" y="50" width="373" height="88"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G9q-zz-kI5" id="BHj-7r-w4d">
@@ -131,6 +131,9 @@
                     <navigationItem key="navigationItem" title="Zonas arqueológicas" id="Lnd-0w-WSX">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="ellipsis" catalog="system" id="H4l-ic-bhX"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tablaZonas" destination="1eT-gj-X3f" id="MWQ-Rf-iJi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -192,7 +195,7 @@
                                 <rect key="frame" x="0.0" y="100" width="393" height="752"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BPb-n8-PyW">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1075"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1100"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="museomaya" translatesAutoresizingMaskIntoConstraints="NO" id="dia-4a-Dzn">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
@@ -201,14 +204,17 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museo Maya" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMV-5O-sGo">
-                                                <rect key="frame" x="0.0" y="210" width="393" height="35"/>
+                                                <rect key="frame" x="0.0" y="210" width="393" height="60"/>
                                                 <color key="backgroundColor" red="0.3704094095029552" green="0.8199553519788414" blue="0.64032972932355514" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="T7e-cA-X3T"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="35"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h8f-uc-zL7">
-                                                <rect key="frame" x="0.0" y="255" width="393" height="210"/>
+                                                <rect key="frame" x="0.0" y="280" width="393" height="210"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVj-PK-f0h">
                                                         <rect key="frame" x="5" y="5" width="383" height="200"/>
@@ -253,9 +259,9 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kpl-HT-Xun">
-                                                <rect key="frame" x="0.0" y="475" width="393" height="600"/>
+                                                <rect key="frame" x="0.0" y="500" width="393" height="600"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="epO-Ce-EoW">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="epO-Ce-EoW">
                                                         <rect key="frame" x="5" y="5" width="383" height="590"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -274,9 +280,6 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="iMV-5O-sGo" firstAttribute="top" secondItem="dia-4a-Dzn" secondAttribute="bottom" constant="80" id="buN-xR-yrj"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
