@@ -10,6 +10,7 @@
 		6C1D709A2A14916400ECE2AC /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D70982A14916400ECE2AC /* VideoCell.swift */; };
 		6C1D709B2A14916400ECE2AC /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C1D70992A14916400ECE2AC /* VideoCell.xib */; };
 		6C1D709E2A14933800ECE2AC /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 6C1D709D2A14933800ECE2AC /* YouTubeiOSPlayerHelper */; };
+		6C1D70A02A1493FA00ECE2AC /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D709F2A1493FA00ECE2AC /* VideoPlayerViewController.swift */; };
 		6C23CFF62A145E7C003F2448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C23CFF52A145E7C003F2448 /* AppDelegate.swift */; };
 		6C23CFF82A145E7C003F2448 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C23CFF72A145E7C003F2448 /* SceneDelegate.swift */; };
 		6C23CFFA2A145E7C003F2448 /* ZonasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C23CFF92A145E7C003F2448 /* ZonasViewController.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		6C1D70982A14916400ECE2AC /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		6C1D70992A14916400ECE2AC /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		6C1D709F2A1493FA00ECE2AC /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		6C23CFF22A145E7C003F2448 /* Adventure Kaan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adventure Kaan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C23CFF52A145E7C003F2448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C23CFF72A145E7C003F2448 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			children = (
 				6C1D70972A14915300ECE2AC /* Vistas */,
 				6C4D50A62A148A8000994D3A /* VideosViewController.swift */,
+				6C1D709F2A1493FA00ECE2AC /* VideoPlayerViewController.swift */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				6C4D50A72A148A8000994D3A /* VideosViewController.swift in Sources */,
 				6C23D0202A147B3A003F2448 /* TemaCultura.swift in Sources */,
 				6C23D0172A146EA0003F2448 /* ZonaCelda.swift in Sources */,
+				6C1D70A02A1493FA00ECE2AC /* VideoPlayerViewController.swift in Sources */,
 				6C23D0242A147C47003F2448 /* CulturaCelda.swift in Sources */,
 				6C23CFF82A145E7C003F2448 /* SceneDelegate.swift in Sources */,
 			);

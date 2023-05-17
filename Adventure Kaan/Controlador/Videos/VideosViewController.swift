@@ -63,6 +63,19 @@ extension VideosViewController: UITableViewDelegate, UITableViewDataSource {
         
         return celda
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "VideoPlayerViewController") as! VideoPlayerViewController
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .fullScreen
+        vc.recibirURLVideo =  videos[indexPath.row].urlVideo
+        present(vc, animated: true)
+    }
 }
 
 struct Video {
