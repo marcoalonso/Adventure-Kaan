@@ -11,6 +11,8 @@ import MapKit
 class ZonasViewController: UIViewController {
     
     
+    
+    
     @IBOutlet weak var mapaZonas: MKMapView!
     @IBOutlet weak var tablaZonas: UITableView!
     
@@ -45,10 +47,10 @@ class ZonasViewController: UIViewController {
     
     @IBAction func aboutUsButton(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "DetalleZonaViewController") as! DetalleZonaViewController
-        vc.modalTransitionStyle = .crossDissolve
+        let vc = storyboard.instantiateViewController(withIdentifier: "AboutUsViewController") as! AboutUsViewController
         vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        vc.modalTransitionStyle = .crossDissolve
+        self.present(vc, animated: true)
     }
     
     
@@ -92,6 +94,15 @@ extension ZonasViewController: UITableViewDelegate, UITableViewDataSource {
         
         
         return celda
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "DetalleZonaViewController") as! DetalleZonaViewController
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .fullScreen
+        vc.recibirZona = zonas[indexPath.row]
+        present(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
