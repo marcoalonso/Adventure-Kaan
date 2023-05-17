@@ -44,7 +44,7 @@ extension CulturaViewController:  UITableViewDelegate, UITableViewDataSource {
         let celda = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath) as! CulturaCelda
         
         celda.nombreTemaCultura.text = temasCultura[indexPath.row].nombre
-        celda.imagenCultura.image = temasCultura[indexPath.row].imagen
+        celda.imagenCultura.image = temasCultura[indexPath.row].imagenLogo
         
         return celda
     }
