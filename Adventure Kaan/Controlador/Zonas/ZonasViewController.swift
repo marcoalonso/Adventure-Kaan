@@ -11,7 +11,8 @@ import MapKit
 class ZonasViewController: UIViewController {
     
     
-    
+    var latitud: Double = 18.42078245
+    var longitud: Double = -88.7926221
     
     @IBOutlet weak var mapaZonas: MKMapView!
     @IBOutlet weak var tablaZonas: UITableView!
@@ -53,16 +54,49 @@ class ZonasViewController: UIViewController {
         self.present(vc, animated: true)
     }
     
+    ///Maps
+    
+    @IBAction func goMaps(_ sender: UIButton) {
+//        if let url = URL(string: "comgooglemaps://") {
+//            if UIApplication.shared.canOpenURL(url) {
+//                // Google Maps está instalado, abre la app
+//                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+//            } else {
+//                // Google Maps no está instalado, abre la versión web en Safari
+//                if let webURL = URL(string: "https://maps.google.com") {
+//                    UIApplication.shared.open(webURL, options: [:], completionHandler: nil)
+//                }
+//            }
+//        }
+
+        func openGoogleMapsWithCoordinates(latitude: Double, longitude: Double) {
+            if let url = URL(string: "comgooglemaps://?center=\(latitude),\(longitude)&zoom=14&views=traffic") {
+                if UIApplication.shared.canOpenURL(url) {
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                } else {
+                    print("Google Maps no está instalado en el dispositivo.")
+                    // Puedes abrir la versión web de Google Maps en Safari como alternativa
+                    if let webURL = URL(string: "https://maps.google.com/?q=\(latitude),\(longitude)") {
+                        UIApplication.shared.open(webURL, options: [:], completionHandler: nil)
+                    }
+                }
+            }
+        }
+
+        // Llamar a la función para abrir Google Maps con las coordenadas deseadas
+        let latitude = latitud
+        let longitude = longitud
+        openGoogleMapsWithCoordinates(latitude: latitude, longitude: longitude)
+
+
+    }
+    
     
 }
 
 extension ZonasViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        // Personaliza el aspecto del marcador en función de tu preferencia
-        // Puedes utilizar MKMarkerAnnotationView, MKPinAnnotationView u otros
-        
-        // Ejemplo utilizando MKMarkerAnnotationView:
         let identifier = "CustomAnnotation"
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView
         
@@ -72,13 +106,30 @@ extension ZonasViewController: MKMapViewDelegate {
             annotationView?.annotation = annotation
         }
         
-        // Personaliza la apariencia del marcador
         annotationView?.markerTintColor = UIColor.red
-//        annotationView?.glyphText = "1"
         
         return annotationView
     }
     
+    
+    func mapView(_ mapView: MKMapView, didSelect annotation: MKAnnotation) {
+        print(annotation.title)
+    }
+    
+    
+    //Seleccion annotation
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let annotation = view.annotation as? MKPointAnnotation {
+            // Se seleccionó un MKPointAnnotation en el mapa
+            // Aquí puedes realizar las acciones deseadas
+            latitud = annotation.coordinate.latitude
+            longitud = annotation.coordinate.longitude
+            print("Se seleccionó un MKPointAnnotation: \(annotation.title ?? "")")
+            print("Se seleccionó un coordenadas: \(annotation.coordinate.latitude)")
+            print("Se seleccionó un coordenadas: \(annotation.coordinate.longitude)")
+        }
+    }
+
 }
 
 extension ZonasViewController: UITableViewDelegate, UITableViewDataSource {

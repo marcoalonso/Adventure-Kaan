@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rak-FU-bt7">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -32,13 +33,33 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </mapView>
+                                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AM-kt-wvQ">
+                                                <rect key="frame" x="323" y="150" width="40" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="KZQ-SS-xDX"/>
+                                                    <constraint firstAttribute="height" constant="40" id="Sno-3i-cZg"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="arrow.uturn.forward.square.fill" catalog="system"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="goMaps:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LMu-lh-LiL"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="0AM-kt-wvQ" secondAttribute="bottom" constant="10" id="2I8-jI-EXe"/>
                                             <constraint firstAttribute="trailing" secondItem="YQk-vP-OJA" secondAttribute="trailing" constant="5" id="FeY-Xm-a5x"/>
                                             <constraint firstAttribute="height" constant="200" id="IUx-kI-ovR"/>
                                             <constraint firstItem="YQk-vP-OJA" firstAttribute="top" secondItem="6vH-br-ClJ" secondAttribute="top" constant="5" id="T3F-R0-2Ny"/>
                                             <constraint firstItem="YQk-vP-OJA" firstAttribute="leading" secondItem="6vH-br-ClJ" secondAttribute="leading" constant="5" id="ZgS-tv-fdI"/>
+                                            <constraint firstAttribute="trailing" secondItem="0AM-kt-wvQ" secondAttribute="trailing" constant="10" id="bAC-9h-Rca"/>
                                             <constraint firstAttribute="bottom" secondItem="YQk-vP-OJA" secondAttribute="bottom" constant="5" id="oPH-UE-e0r"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -768,6 +789,7 @@
     <resources>
         <image name="adventure" width="2500" height="2500"/>
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
+        <image name="arrow.uturn.forward.square.fill" catalog="system" width="128" height="114"/>
         <image name="dots" width="500" height="500"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="house.circle" catalog="system" width="128" height="123"/>
