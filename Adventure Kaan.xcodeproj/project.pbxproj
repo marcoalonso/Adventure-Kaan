@@ -19,6 +19,10 @@
 		6C23D0172A146EA0003F2448 /* ZonaCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C23D0152A146EA0003F2448 /* ZonaCelda.swift */; };
 		6C23D0182A146EA0003F2448 /* ZonaCelda.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C23D0162A146EA0003F2448 /* ZonaCelda.xib */; };
 		6C23D01B2A14797E003F2448 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C23D01A2A14797E003F2448 /* AboutUsViewController.swift */; };
+		6C23D01E2A147AA8003F2448 /* CulturaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C23D01D2A147AA8003F2448 /* CulturaViewController.swift */; };
+		6C23D0202A147B3A003F2448 /* TemaCultura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C23D01F2A147B3A003F2448 /* TemaCultura.swift */; };
+		6C23D0242A147C47003F2448 /* CulturaCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C23D0222A147C47003F2448 /* CulturaCelda.swift */; };
+		6C23D0252A147C47003F2448 /* CulturaCelda.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C23D0232A147C47003F2448 /* CulturaCelda.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		6C23D0152A146EA0003F2448 /* ZonaCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaCelda.swift; sourceTree = "<group>"; };
 		6C23D0162A146EA0003F2448 /* ZonaCelda.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZonaCelda.xib; sourceTree = "<group>"; };
 		6C23D01A2A14797E003F2448 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		6C23D01D2A147AA8003F2448 /* CulturaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulturaViewController.swift; sourceTree = "<group>"; };
+		6C23D01F2A147B3A003F2448 /* TemaCultura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemaCultura.swift; sourceTree = "<group>"; };
+		6C23D0222A147C47003F2448 /* CulturaCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulturaCelda.swift; sourceTree = "<group>"; };
+		6C23D0232A147C47003F2448 /* CulturaCelda.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CulturaCelda.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,7 @@
 		6C23D00E2A146638003F2448 /* Controlador */ = {
 			isa = PBXGroup;
 			children = (
+				6C23D01C2A147A9A003F2448 /* Cultura */,
 				6C23D00F2A146652003F2448 /* Zonas */,
 				6C23D01A2A14797E003F2448 /* AboutUsViewController.swift */,
 			);
@@ -124,6 +133,25 @@
 			);
 			name = "ZonasArqueológicas";
 			path = "ZonasArqueológicas";
+			sourceTree = "<group>";
+		};
+		6C23D01C2A147A9A003F2448 /* Cultura */ = {
+			isa = PBXGroup;
+			children = (
+				6C23D0212A147C33003F2448 /* Vistas */,
+				6C23D01D2A147AA8003F2448 /* CulturaViewController.swift */,
+				6C23D01F2A147B3A003F2448 /* TemaCultura.swift */,
+			);
+			path = Cultura;
+			sourceTree = "<group>";
+		};
+		6C23D0212A147C33003F2448 /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				6C23D0222A147C47003F2448 /* CulturaCelda.swift */,
+				6C23D0232A147C47003F2448 /* CulturaCelda.xib */,
+			);
+			path = Vistas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +214,7 @@
 			files = (
 				6C23D0022A145E7D003F2448 /* LaunchScreen.storyboard in Resources */,
 				6C23CFFF2A145E7D003F2448 /* Assets.xcassets in Resources */,
+				6C23D0252A147C47003F2448 /* CulturaCelda.xib in Resources */,
 				6C23CFFD2A145E7C003F2448 /* Main.storyboard in Resources */,
 				6C23D0182A146EA0003F2448 /* ZonaCelda.xib in Resources */,
 			);
@@ -201,10 +230,13 @@
 				6C23D01B2A14797E003F2448 /* AboutUsViewController.swift in Sources */,
 				6C23CFFA2A145E7C003F2448 /* ZonasViewController.swift in Sources */,
 				6C23D00C2A146457003F2448 /* ZonaData.swift in Sources */,
+				6C23D01E2A147AA8003F2448 /* CulturaViewController.swift in Sources */,
 				6C23D0132A14666E003F2448 /* DetalleZonaViewController.swift in Sources */,
 				6C23CFF62A145E7C003F2448 /* AppDelegate.swift in Sources */,
 				6C23D00A2A145EC3003F2448 /* UIView+Extension.swift in Sources */,
+				6C23D0202A147B3A003F2448 /* TemaCultura.swift in Sources */,
 				6C23D0172A146EA0003F2448 /* ZonaCelda.swift in Sources */,
+				6C23D0242A147C47003F2448 /* CulturaCelda.swift in Sources */,
 				6C23CFF82A145E7C003F2448 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

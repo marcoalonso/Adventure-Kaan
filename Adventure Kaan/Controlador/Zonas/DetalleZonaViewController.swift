@@ -38,8 +38,8 @@ class DetalleZonaViewController: UIViewController {
         mapaZona.addAnnotation(annotation)
         
         ///Nivel de zoom al mapa
-        var spanMapa = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-        var regionMapa = MKCoordinateRegion(center: annotation, span: spanMapa)
+        let spanMapa = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let regionMapa = MKCoordinateRegion(center: annotation.coordinate, span: spanMapa)
         
         ///Agregar la region al mapa y mostrar la ubicacion del usuario
         mapaZona.setRegion(regionMapa, animated: true)

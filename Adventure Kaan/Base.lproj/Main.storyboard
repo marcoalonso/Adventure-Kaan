@@ -405,7 +405,7 @@
         <!--Cultura-->
         <scene sceneID="094-Bb-gSw">
             <objects>
-                <viewController id="wyC-sa-Qve" sceneMemberID="viewController">
+                <viewController id="wyC-sa-Qve" customClass="CulturaViewController" customModule="Adventure_Kaan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pJg-0w-VWS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -413,6 +413,16 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fDX-br-D7j">
                                 <rect key="frame" x="10" y="103" width="373" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celda" id="2d0-tp-zj2">
+                                        <rect key="frame" x="0.0" y="50" width="373" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2d0-tp-zj2" id="aXT-mG-N3x">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4C0-3C-TBq">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
@@ -431,6 +441,9 @@
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="dots"/>
+                                        <connections>
+                                            <action selector="aboutUsButton:" destination="wyC-sa-Qve" eventType="touchUpInside" id="yOZ-82-8zB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="linkColor"/>
@@ -457,6 +470,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Cultura" image="newspaper" catalog="system" id="en2-4e-7LR"/>
                     <navigationItem key="navigationItem" title="Cultura" id="pbF-Yk-vGz"/>
+                    <connections>
+                        <outlet property="tablaCultura" destination="fDX-br-D7j" id="xgR-yD-FSj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NMf-Zl-jRm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
