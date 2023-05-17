@@ -104,7 +104,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="backgroundColor" red="0.19607841970000001" green="0.015686275440000001" blue="0.67450982329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="8Oe-gw-hhg"/>
                                     <constraint firstAttribute="bottom" secondItem="H4i-oz-Bbu" secondAttribute="bottom" constant="10" id="FYw-Cm-gwm"/>
@@ -183,7 +183,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="backgroundColor" red="0.19607841970000001" green="0.015686275440000001" blue="0.67450982329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="RhV-86-Yud" firstAttribute="leading" secondItem="flL-5s-7He" secondAttribute="leading" constant="10" id="43H-jN-Vtc"/>
                                     <constraint firstAttribute="height" constant="100" id="8nO-iU-jZe"/>
@@ -353,7 +353,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="backgroundColor" red="0.19607841970000001" green="0.015686275440000001" blue="0.67450982329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="ZtL-kQ-ZQF" secondAttribute="bottom" constant="10" id="CCs-WI-TUp"/>
                                     <constraint firstItem="X95-24-8AC" firstAttribute="leading" secondItem="ZtL-kQ-ZQF" secondAttribute="trailing" constant="30" id="ETq-HC-cr2"/>
@@ -449,7 +449,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="backgroundColor" red="0.19607841970000001" green="0.015686275440000001" blue="0.67450982329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="2dy-PS-v8J" secondAttribute="bottom" constant="10" id="7RZ-lE-zlk"/>
                                     <constraint firstAttribute="height" constant="100" id="CP1-I5-4xc"/>
@@ -484,7 +484,7 @@
         <!--Detalle Cultura View Controller-->
         <scene sceneID="5NM-Sz-64j">
             <objects>
-                <viewController storyboardIdentifier="DetalleCulturaViewController" id="5lb-6d-Kbx" customClass="DetalleCulturaViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetalleCulturaViewController" id="5lb-6d-Kbx" customClass="DetalleCulturaViewController" customModule="Adventure_Kaan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nxg-H0-hZb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -525,7 +525,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="backgroundColor" red="0.19607841970000001" green="0.015686275440000001" blue="0.67450982329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="jAc-Mj-9j7" secondAttribute="bottom" constant="10" id="Sme-5u-NLq"/>
                                     <constraint firstAttribute="bottom" secondItem="aa3-uy-myw" secondAttribute="bottom" constant="10" id="aAH-WJ-UY1"/>
@@ -650,7 +650,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="backgroundColor" red="0.19607841970000001" green="0.015686275440000001" blue="0.67450982329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="DL7-3F-72Q" secondAttribute="bottom" constant="10" id="3lQ-oa-4tZ"/>
                                     <constraint firstItem="DL7-3F-72Q" firstAttribute="leading" secondItem="cEs-rn-OAy" secondAttribute="leading" constant="10" id="J86-N3-0XZ"/>
@@ -676,10 +676,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Videos" image="play.square.fill" catalog="system" id="nAT-CG-rZq"/>
                     <navigationItem key="navigationItem" title="Videos" id="cBc-ll-yXC"/>
+                    <connections>
+                        <outlet property="tablaVideos" destination="5XU-Gw-gBS" id="T60-tv-hVV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snt-f3-4OW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744.2748091603053" y="1254.9295774647887"/>
+            <point key="canvasLocation" x="1013" y="992"/>
         </scene>
     </scenes>
     <resources>
@@ -694,9 +697,6 @@
         <image name="play.square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

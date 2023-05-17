@@ -19,11 +19,15 @@ class DetalleCulturaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        configurarUI()
     }
     
     private func configurarUI(){
-        guard let mostrarCultura = recibirCultura else { return }
+        guard let culturaMostrar = recibirCultura else { return }
+        imagenCultura.image = culturaMostrar.imagen
+        textoCultura.text = culturaMostrar.texto
+        tituloCultura.text = culturaMostrar.nombre
+        
         
     }
    
