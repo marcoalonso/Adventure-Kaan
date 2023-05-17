@@ -39,6 +39,9 @@ extension CulturaViewController:  UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath) as! CulturaCelda
         
+        celda.nombreTemaCultura.text = temasCultura[indexPath.row].nombre
+        celda.imagenCultura.image = temasCultura[indexPath.row].imagen
+        
         return celda
     }
     

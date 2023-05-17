@@ -46,6 +46,15 @@ class DetalleZonaViewController: UIViewController {
         mapaZona.showsUserLocation = true
     }
     
+    
+    @IBAction func aboutUsButton(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AboutUsViewController") as! AboutUsViewController
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        self.present(vc, animated: true)
+    }
+    
     @IBAction func backButton(_ sender: UIButton) {
         dismiss(animated: true)
     }
