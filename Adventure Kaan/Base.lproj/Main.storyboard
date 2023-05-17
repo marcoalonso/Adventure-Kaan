@@ -132,6 +132,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="ellipsis" catalog="system" id="H4l-ic-bhX"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="mapaZonas" destination="YQk-vP-OJA" id="Mco-NJ-jQE"/>
                         <outlet property="tablaZonas" destination="1eT-gj-X3f" id="MWQ-Rf-iJi"/>
                     </connections>
                 </viewController>

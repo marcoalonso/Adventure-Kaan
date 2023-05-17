@@ -68,13 +68,13 @@
 			children = (
 				6C23CFF52A145E7C003F2448 /* AppDelegate.swift */,
 				6C23CFF72A145E7C003F2448 /* SceneDelegate.swift */,
+				6C23D00D2A14645A003F2448 /* Modelo */,
 				6C23D00E2A146638003F2448 /* Controlador */,
 				6C23CFFB2A145E7C003F2448 /* Main.storyboard */,
 				6C23CFFE2A145E7D003F2448 /* Assets.xcassets */,
 				6C23D0002A145E7D003F2448 /* LaunchScreen.storyboard */,
 				6C23D0032A145E7D003F2448 /* Info.plist */,
 				6C23D0092A145EC3003F2448 /* UIView+Extension.swift */,
-				6C23D00D2A14645A003F2448 /* Modelo */,
 			);
 			path = "Adventure Kaan";
 			sourceTree = "<group>";
@@ -82,7 +82,7 @@
 		6C23D00D2A14645A003F2448 /* Modelo */ = {
 			isa = PBXGroup;
 			children = (
-				6C23D00B2A146457003F2448 /* ZonasData.swift */,
+				6C23D0192A1472FF003F2448 /* ZonasArqueológicas */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -112,6 +112,15 @@
 				6C23D0162A146EA0003F2448 /* ZonaCelda.xib */,
 			);
 			path = Vistas;
+			sourceTree = "<group>";
+		};
+		6C23D0192A1472FF003F2448 /* ZonasArqueológicas */ = {
+			isa = PBXGroup;
+			children = (
+				6C23D00B2A146457003F2448 /* ZonasData.swift */,
+			);
+			name = "ZonasArqueológicas";
+			path = "ZonasArqueológicas";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
