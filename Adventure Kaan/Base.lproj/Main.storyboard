@@ -22,10 +22,10 @@
                                 <rect key="frame" x="10" y="105" width="373" height="664"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6vH-br-ClJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="220"/>
                                         <subviews>
                                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQk-vP-OJA">
-                                                <rect key="frame" x="5" y="5" width="363" height="190"/>
+                                                <rect key="frame" x="5" y="5" width="363" height="210"/>
                                                 <standardMapConfiguration key="preferredConfiguration"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -34,7 +34,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </mapView>
                                             <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AM-kt-wvQ">
-                                                <rect key="frame" x="323" y="150" width="40" height="40"/>
+                                                <rect key="frame" x="323" y="170" width="40" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="KZQ-SS-xDX"/>
@@ -56,7 +56,7 @@
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="0AM-kt-wvQ" secondAttribute="bottom" constant="10" id="2I8-jI-EXe"/>
                                             <constraint firstAttribute="trailing" secondItem="YQk-vP-OJA" secondAttribute="trailing" constant="5" id="FeY-Xm-a5x"/>
-                                            <constraint firstAttribute="height" constant="200" id="IUx-kI-ovR"/>
+                                            <constraint firstAttribute="height" constant="220" id="IUx-kI-ovR"/>
                                             <constraint firstItem="YQk-vP-OJA" firstAttribute="top" secondItem="6vH-br-ClJ" secondAttribute="top" constant="5" id="T3F-R0-2Ny"/>
                                             <constraint firstItem="YQk-vP-OJA" firstAttribute="leading" secondItem="6vH-br-ClJ" secondAttribute="leading" constant="5" id="ZgS-tv-fdI"/>
                                             <constraint firstAttribute="trailing" secondItem="0AM-kt-wvQ" secondAttribute="trailing" constant="10" id="bAC-9h-Rca"/>
@@ -75,7 +75,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1eT-gj-X3f">
-                                        <rect key="frame" x="0.0" y="205" width="373" height="459"/>
+                                        <rect key="frame" x="0.0" y="225" width="373" height="439"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celda" textLabel="xk0-39-a7Y" imageView="qlt-VJ-xz7" rowHeight="88" style="IBUITableViewCellStyleDefault" id="G9q-zz-kI5">
@@ -216,7 +216,7 @@
                                     <constraint firstAttribute="bottom" secondItem="dUi-cN-bC7" secondAttribute="bottom" constant="10" id="vpE-FO-VHq"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgO-ZU-ody">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgO-ZU-ody">
                                 <rect key="frame" x="0.0" y="100" width="393" height="718"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BPb-n8-PyW">
@@ -575,7 +575,7 @@
                                     <constraint firstAttribute="height" constant="100" id="qcR-uM-a3T"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDs-Zn-R2T">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDs-Zn-R2T">
                                 <rect key="frame" x="0.0" y="100" width="393" height="718"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Hw6-F2-qYg">
@@ -600,7 +600,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ef-Pv-t93">
                                                 <rect key="frame" x="0.0" y="270" width="393" height="400"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="UxM-qZ-Jhe">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="UxM-qZ-Jhe">
                                                         <rect key="frame" x="5" y="5" width="383" height="390"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -662,7 +662,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5XU-Gw-gBS">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5XU-Gw-gBS">
                                 <rect key="frame" x="10" y="103" width="373" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
