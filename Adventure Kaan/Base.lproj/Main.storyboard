@@ -7,6 +7,7 @@
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -779,12 +780,56 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Hw6-F2-qYg">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="670"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="museomaya" translatesAutoresizingMaskIntoConstraints="NO" id="CB7-DO-WCk">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gXG-Lp-dLX">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="200" id="ebq-e7-Xz6"/>
+                                                    <constraint firstAttribute="height" constant="200" id="RCV-4u-MFC"/>
                                                 </constraints>
-                                            </imageView>
+                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CYT-Lv-MW0">
+                                                    <size key="itemSize" width="286" height="196"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celda" id="1C1-ML-l2c" customClass="DetalleCelda" customModule="Adventure_Kaan" customModuleProvider="target">
+                                                        <rect key="frame" x="53.666666666666664" y="0.0" width="286" height="196"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Lr0-VT-vpf">
+                                                            <rect key="frame" x="0.0" y="0.0" width="286" height="196"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwR-kA-d6p">
+                                                                    <rect key="frame" x="3" y="3" width="280" height="190"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mYa-Ta-8Ye">
+                                                                            <rect key="frame" x="3" y="3" width="274" height="184"/>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="mYa-Ta-8Ye" firstAttribute="leading" secondItem="gwR-kA-d6p" secondAttribute="leading" constant="3" id="2e9-Xk-NlL"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="mYa-Ta-8Ye" secondAttribute="bottom" constant="3" id="AtG-4p-iCI"/>
+                                                                        <constraint firstItem="mYa-Ta-8Ye" firstAttribute="top" secondItem="gwR-kA-d6p" secondAttribute="top" constant="3" id="dk3-R8-eFM"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="mYa-Ta-8Ye" secondAttribute="trailing" constant="3" id="wqR-zF-Bcv"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="gwR-kA-d6p" firstAttribute="top" secondItem="Lr0-VT-vpf" secondAttribute="top" constant="3" id="2yj-i7-afT"/>
+                                                                <constraint firstItem="gwR-kA-d6p" firstAttribute="leading" secondItem="Lr0-VT-vpf" secondAttribute="leading" constant="3" id="KQv-Np-711"/>
+                                                                <constraint firstAttribute="trailing" secondItem="gwR-kA-d6p" secondAttribute="trailing" constant="3" id="NxP-yw-czR"/>
+                                                                <constraint firstAttribute="bottom" secondItem="gwR-kA-d6p" secondAttribute="bottom" constant="3" id="q5Z-wR-PNW"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="286" height="196"/>
+                                                        <connections>
+                                                            <outlet property="imagenCultura" destination="mYa-Ta-8Ye" id="kxg-ta-nUY"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museo Maya" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joQ-XL-fhx">
                                                 <rect key="frame" x="0.0" y="205" width="393" height="60"/>
                                                 <color key="backgroundColor" red="0.033556703479999998" green="0.82429867980000004" blue="0.61370760199999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -843,7 +888,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imagenCultura" destination="CB7-DO-WCk" id="JOQ-TQ-k4L"/>
+                        <outlet property="culturaCollection" destination="gXG-Lp-dLX" id="jHG-Cl-m55"/>
                         <outlet property="textoCultura" destination="UxM-qZ-Jhe" id="uyp-rf-mOL"/>
                         <outlet property="tituloCultura" destination="joQ-XL-fhx" id="mHz-Qw-TiD"/>
                     </connections>
