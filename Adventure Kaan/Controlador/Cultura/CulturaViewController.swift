@@ -55,6 +55,8 @@ extension CulturaViewController:  UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.warning)
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "DetalleCulturaViewController") as! DetalleCulturaViewController

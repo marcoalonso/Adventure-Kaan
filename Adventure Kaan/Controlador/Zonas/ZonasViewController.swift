@@ -102,13 +102,17 @@ extension ZonasViewController: MKMapViewDelegate {
     
     
     func mapView(_ mapView: MKMapView, didSelect annotation: MKAnnotation) {
-        print(annotation.title)
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.warning)
+        
     }
     
     
     //Seleccion annotation
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         if let annotation = view.annotation as? MKPointAnnotation {
+            let generator = UINotificationFeedbackGenerator()
+            generator.notificationOccurred(.warning)
             // Se seleccionó un MKPointAnnotation en el mapa
             // Aquí puedes realizar las acciones deseadas
             latitud = annotation.coordinate.latitude
@@ -137,6 +141,8 @@ extension ZonasViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.warning)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "DetalleZonaViewController") as! DetalleZonaViewController
         vc.modalTransitionStyle = .crossDissolve
